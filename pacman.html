@@ -1,0 +1,71 @@
+<div class="triangle" id="Player-triangle"></div>
+<div id="player"></div>
+<div class="food">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<div id="enemy"></div>
+<div id="enemy-triangles">
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+</div>
+<style>
+  body{
+    background-color: #000000;
+  }
+    #player{
+      position: relative;
+      background-color: #E0E246;
+      width: 60px;
+      height: 59px;
+      border-radius: 60px;
+      top: 52.3;
+      left: 52px;
+    }
+    .triangle{
+      position: relative;
+      width: 0px;
+      height: 0px;
+      z-index: 1;
+    }
+    #player-triangle{
+       border: 50px solid transparent;
+       border-top: 0;
+       border-bottom: 60px solid #000000;
+       transform: rotate( -90deg );
+       top: 112px;
+       left: 58;
+    }
+    .food div{
+      position: relative;
+      float: left;
+      background-color: white;
+      width: 10px;
+      height: 10px;
+      border-radius: 30px;
+      margin-left: 20px;
+      top: 18px;
+      left: 137px;
+    }
+    #enemy{
+      position: relative;
+      background-color: #C74E4E;
+      width: 60px;
+      height: 57px;
+      left: 272px;
+      top: -7px;
+      border-top-left-radius: 31px;
+      border-top-right-radius: 31px;
+    }
+    #enemy-triangles div{
+      position: relative;
+      float: left;
+      border: 10px solid transparent;
+      border-top: 0;
+      border-bottom: 12px solid #000000;
+      left: 272;
+      top: -18px;
+    }
+</style>
